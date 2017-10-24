@@ -16,7 +16,7 @@ query.param <- list(q = "d3", sort = "forks")
 response <- GET(base.url, query = query.param)
 body <- content(response, "text")
 data <- fromJSON(body)
-most.popular <- data$items[1,]
+most.popular <- data$items[1, "forks"]
 # How many public repositories does our course organization have?
 org.repo <- "/orgs/info201a-au17/repos"
 url.full <- paste0(api.url, org.repo)
