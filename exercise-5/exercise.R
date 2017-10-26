@@ -37,4 +37,4 @@ GetReview <- function(movie) {
 }
 
 # Test that your function works with a movie of your choice
-inception.info <- GetReview("Inception")
+movie.info <- GetReview("We're the Millers")
